@@ -75,3 +75,12 @@ main {
 .titulo-proyecto {
     text-align: center;
 }
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    max-width: 100px;
+}
