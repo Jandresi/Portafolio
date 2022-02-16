@@ -1,0 +1,77 @@
+:root {
+    --blanco: #f5f5f5;
+    --rojo: #DA1212;
+    --enfasis: #30475E;
+    --negro: #190004;
+}
+
+.nombre {
+    padding: 20px;
+}
+
+.nombre h1 {
+    color: var(--blanco);
+    font-weight: 900;
+}
+
+.nombre h2 {
+    color: var(--blanco);
+    font-weight: 300;
+}
+
+main {
+    padding-top: 20px;
+    background-size: cover;
+    background-image: url(/img/Fondo2.jpg);
+    min-height: 100vh;
+}
+
+.presentacion {
+    padding: 20px;
+    background-color: rgba(78, 78, 78, 0.5);
+}
+
+.presentacion p {
+    font-size: 1.4em;
+    margin: auto 50px;
+    color: var(--blanco);
+}
+
+.subtitulo {
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--blanco);
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-around;
+}
+
+.proyecto {
+    background-color: rgba(78, 78, 78, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.pantallazo {
+    max-width: 500px;
+    max-height: 400px;
+    margin: auto 30px;
+}
+
+.proyecto p {
+    font-size: 1.3em;
+    color: var(--blanco);
+}
+
+.proyecto h3, .proyecto h4 {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    color: var(--blanco);
+    font-weight: 600;
+}
+
+.titulo-proyecto {
+    text-align: center;
+}
