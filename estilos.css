@@ -22,7 +22,7 @@
 main {
     padding-top: 20px;
     background-size: cover;
-    background-image: url(/img/Fondo2.jpg);
+    background-image: url('https://i.ibb.co/R2QxJt5/digital-red-and-blue-particles-line-background.jpg');
     min-height: 100vh;
 }
 
