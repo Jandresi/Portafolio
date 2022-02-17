@@ -1,6 +1,6 @@
 :root {
     --blanco: #f5f5f5;
-    --rojo: #DA1212;
+    --rojo: #e66767;
     --enfasis: #30475E;
     --negro: #190004;
 }
@@ -26,16 +26,107 @@ main {
     min-height: 100vh;
 }
 
+/* ----------CARD---------- */
 .presentacion {
-    padding: 20px;
-    background-color: rgba(78, 78, 78, 0.5);
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Ubuntu", sans-serif;
+    background-color: rgba(25, 25, 25, 0.5);
+    padding: 10px 10px;
 }
 
-.presentacion p {
-    font-size: 1.4em;
-    margin: auto 50px;
-    color: var(--blanco);
+.tarjeta {
+    min-width: 380px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: max-content;
 }
+
+.tarjeta-header {
+    padding: 40px 30px;
+    background-color: var(--enfasis);
+}
+
+.pic {
+    display: inline-block;
+    padding: 5px;
+    background: linear-gradient(130deg, #74b9ff, var(--rojo));
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 4s linear infinite;
+}
+
+.pic img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.tarjeta-nombre {
+    color: var(--blanco);
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1em;
+}
+
+.desc {
+    font-size: 18px;
+    color: #e66767;
+}
+
+.redes {
+    font-size: 16px;
+    color: var(--blanco);
+    margin-top: 10px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.iconos a {
+    color: var(--blanco);
+    width: 56px;
+    font-size: 30px;
+    transform: .3s linear;
+    text-decoration: none;
+}
+
+.iconos a:hover {
+    color: var(--rojo);
+}
+
+@keyframes animated-gradient {
+    25% {
+        background-position: left bottom;
+    }
+    50% {
+        background-position: right bottom;
+    }
+    75% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right top;
+    }
+}
+
+.tarjeta-foot {
+    font-size: 1.4em;
+    color: var(--blanco);
+    border-radius: 8px;
+    margin: auto 20px;
+}
+/* ----------CARD---------- */
 
 .subtitulo {
     font-size: 2em;
@@ -43,13 +134,9 @@ main {
     color: var(--blanco);
 }
 
-.informacion {
-    display: flex;
-    justify-content: space-around;
-}
-
 .proyecto {
     background-color: rgba(78, 78, 78, 0.5);
+    /* background-color: rgba(25, 25, 25, 0.5); */
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -82,5 +169,5 @@ main {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
 }
