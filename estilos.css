@@ -42,7 +42,7 @@ main {
 }
 
 .tarjeta {
-    min-width: 380px;
+    min-width: max-content;
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
