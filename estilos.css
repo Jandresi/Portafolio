@@ -23,9 +23,14 @@
 
 main {
     padding: 20px 0;
-    background-size: cover;
     background-image: url('https://i.ibb.co/6Hq9s6w/Fondo2.jpg');
+    background-size: cover;
     min-height: 100vh;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 85%;
 }
 
 /* ----------CARD---------- */
@@ -42,7 +47,8 @@ main {
 }
 
 .tarjeta {
-    min-width: max-content;
+    min-width: 40%;
+    width: auto;
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
@@ -73,19 +79,19 @@ main {
 
 .tarjeta-nombre {
     color: var(--blanco);
-    font-size: 28px;
+    font-size: 1.9em;
     font-weight: 600;
     margin: 10px 0;
     line-height: 1em;
 }
 
 .desc {
-    font-size: 18px;
+    font-size: 1.1em;
     color: #e66767;
 }
 
 .redes {
-    font-size: 16px;
+    font-size: 1em;
     color: var(--blanco);
     margin-top: 10px;
 }
@@ -99,7 +105,7 @@ main {
 .iconos a {
     color: var(--blanco);
     width: 56px;
-    font-size: 30px;
+    font-size: 2em;
     transform: .3s linear;
     text-decoration: none;
 }
@@ -138,8 +144,7 @@ main {
     color: var(--blanco);
 }
 
-.proyecto {
-    /* background-color: rgba(78, 78, 78, 0.5); */
+.proyecto-izq, .proyecto-dcha {
     background-color: var(--fondo-oscuro);
     display: flex;
     justify-content: space-between;
@@ -153,13 +158,13 @@ main {
     margin: auto 0;
 }
 
-.proyecto p {
+.proyecto-izq p, .proyecto-dcha p {
     font-size: 1.3em;
     color: var(--blanco);
     margin: auto 20px;
 }
 
-.proyecto h3, .proyecto h4 {
+.proyecto-izq h3, .proyecto-izq h4, .proyecto-dcha h3, .proyecto-dcha h4 {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     color: var(--blanco);
     font-weight: 600;
@@ -183,6 +188,90 @@ main {
     max-width: 80px;
 }
 
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.links a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
 .footer {
     margin-top: 20px;
+}
+
+@media(max-width: 1199px) {
+    .presentacion {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta-foot {
+        margin-top: 20px;
+        max-width: 80%;
+    }
+
+    .proyecto-izq {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .proyecto-dcha {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:599px) {
+
+    .nombre h1 h2 {
+        font-size: 70%;
+    }
+
+    .presentacion {
+        max-width: 90%;
+    }
+
+    .tarjeta-foot {
+        font-size: 1.1em;
+    }
+
+    .tarjeta {
+        min-width: none;
+        width: max-content;
+    }
+
+    .tarjeta-nombre {
+        font-size: 1.5em;
+    }
+
+    .desc {
+        font-size: 0.9em;
+    }
+
+    .contenedor {
+        width: 90%;
+    }
+
+    .proyecto-izq p, .proyecto-dcha p {
+        font-size: 1em;
+    }
+
+    .logo {
+        max-width: 20%;
+        margin-top: 5px;
+    }
+
+    .pantallazo {
+        max-width: 100%;
+        margin-top: 20px;
+    }
 }
